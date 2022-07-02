@@ -21,8 +21,6 @@ public class SearchBoxTest {
 
             boolean Display = driver.findElement(By.xpath("//*[@id='searchBox']")).isDisplayed();
 
-
-
 //To print the value
 
             System.out.println("\n Element displayed is :"+Display);
