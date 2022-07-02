@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,15 +21,15 @@ public class SearchBoxTest {
 
             boolean Display = driver.findElement(By.xpath("//*[@id='searchBox']")).isDisplayed();
 
-        Assert.assertEquals("Search Box founded.", Display==true,Display==true);
+
 
 //To print the value
 
             System.out.println("\n Element displayed is :"+Display);
 
-// Or we can use Assert method for Unit Test
+// Or we can use Assert method for Unit Test and the code below should return us an error message !!!
 
-            Assert.assertEquals("Search Box founded.", Display==true,Display==true);
+        Assertions.assertEquals(!Display, Display );
 
         }
     }
