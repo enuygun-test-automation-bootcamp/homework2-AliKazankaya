@@ -29,7 +29,7 @@ public class SearchBoxTest {
 
 // Or we can use Assert method for Unit Test and the code below should return us an error message !!!
 
-        Assertions.assertEquals(!Display, Display );
+        Assertions.assertEquals(!Display, Display);
 
         }
     }
